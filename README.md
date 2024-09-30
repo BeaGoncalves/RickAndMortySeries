@@ -2,6 +2,9 @@
 
 ## RickAndMortySeries é um aplicativo Android que exibe informações sobre personagens da série Rick and Morty. O aplicativo permite pesquisar personagens pelo nome, visualizar detalhes dos personagens e gerenciar erros de rede.
 
+![1](https://github.com/user-attachments/assets/deb207c7-8705-4e56-b8d8-3d908e946b60)
+![2](https://github.com/user-attachments/assets/b5b171b0-d7cb-42c1-901b-5f49db352bfa)
+
 ## Tecnologias utilizadas: 
 - **Linguagens**: Kotlin
 - **Frameworks e Bibliotecas**:

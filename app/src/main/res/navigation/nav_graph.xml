@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterListFragment">
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.example.rickandmortyseries.ui.list.CharacterListFragment"
+        android:label="Personagens"
+        tools:layout="@layout/character_list_fragment">
+        <action
+            android:id="@+id/action_characterListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_errorFragment"
+            app:destination="@id/errorFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_genericErrorFragment"
+            app:destination="@id/genericErrorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.rickandmortyseries.ui.DetailsFragment"
+        android:label="Detalhe"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="character"
+            app:argType="com.example.rickandmortyseries.data.Character" />
+        <action
+            android:id="@+id/action_detailsFragment_to_errorFragment"
+            app:destination="@id/errorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.example.rickandmortyseries.ui.error.NetworkErrorFragment"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_error_network" >
+        <action
+            android:id="@+id/action_errorFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genericErrorFragment"
+        android:name="com.example.rickandmortyseries.ui.error.GenericErrorFragment"
+        android:label="fragment_generic_error"
+        tools:layout="@layout/fragment_generic_error" >
+        <action
+            android:id="@+id/action_genericErrorFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+</navigation>

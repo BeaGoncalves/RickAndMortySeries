@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RickAndMortySeries</string>
+
+    <!-- CharacterListFragment -->
+    <string name="list_search_by_name">Pesquisar pelo nome</string>
+
+    <!-- DetailsFragment -->
+    <string name="detail_label_origin">Origem</string>
+    <string name="detail_label_location">Localização</string>
+    <string name="detail_label_gender">Gênero</string>
+    <string name="details_description_episodes">Participação em episódios: %d</string>
+
+    <!-- ErrorsFragment -->
+    <string name="error_network_title">Parece que perdemos a conexão</string>
+    <string name="error_network_description">Verifique sua conexão com a internet e tente novamente.</string>
+    <string name="button_try_again">Tentar novamente</string>
+    <string name="error_generic_description">Estamos tentando entender o que ocorreu, tente novamente ou volte mais tarde.</string>
+    <string name="error_generic_title">Algo de errado aconteceu</string>
+
+</resources>

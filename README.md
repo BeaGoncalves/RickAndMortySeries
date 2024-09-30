@@ -13,7 +13,6 @@
   - ViewModel
   - ConstraintLayout
   - Navigation Component
-  - MockK (para testes unitários)
   - Retrofit
 - **Ferramentas de Build**: Gradle
 
